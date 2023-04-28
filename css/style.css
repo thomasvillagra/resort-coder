@@ -1,0 +1,406 @@
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: auto;
+    
+}
+/* HEADER */
+
+header{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+h1 {
+    font-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.navegador ul{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 10px;
+    list-style: none;
+}
+
+.navegador ul li{
+    padding: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* MAIN */
+/*bienvenidos*/
+
+.bienvenidos{
+    background-image: url(../img/welcome.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.bienvenidos h2{
+    padding: 40px;
+    font-size: 80px;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.bienvenidos p{
+    font-size: 25px;
+    margin: 40px;
+    padding-left: 30%;
+    padding-right: 30%;
+    
+}
+
+/*servicio*/
+
+.servicio{
+    height: auto ;
+    width: auto;
+    background-image: url(../img/sombrilla.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.servicio h2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.636); 
+    font-size: 45px;
+    text-align: center;
+    color: white
+    
+}
+
+.servicio-contenido{
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column  ;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.servicio-contenido p{
+    padding: 10px 200px 50px 200px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: Arial , Helvetica, sans-serif;
+    text-decoration: solid;
+    background-color: rgba(0, 0, 0, 0.636);
+    
+}
+
+.imagen-servicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: auto;
+    overflow: hidden;
+}
+
+.imagen-servicio img{
+    margin: 5px;
+    border: 5px solid grey;
+    border-radius: 5px;
+    width: 420px;
+    height: 320px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/*habitaciones*/
+
+.habitaciones{
+    height: 100%;
+    width: auto;
+    padding-bottom: 50px;
+    background-image: url(../img/pasillo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    
+}
+
+.habitaciones h2{
+    margin-bottom: 50px;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(4, 6, 4, 0.448);
+}   
+/*habitacion comun*/
+.habitacion-comun{
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habitaciones .habitacion-comun img{
+    width: 400px;
+    height: 270px;
+    border: 5px solid grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.habitaciones .habitacion-comun .habitacion-comunes{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.221);
+    margin: 35px 30px 35px 50px;
+}
+
+.habitaciones .habitacion-comunes h3{
+    margin: 25px;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.habitaciones .habitacion-comunes p{
+    margin: 30px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+/*habitacion full*/
+
+.habitacion-full{
+    margin: 25px;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.habitaciones .habitacion-full img{
+    width: 400px;
+    height: 270px;
+    border: 5px solid grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.habitaciones .habitacion-full .habitacion-fulles{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.221);
+    margin: 35px 30px 35px 50px;
+}
+
+.habitaciones .habitacion-fulles h3{
+    margin: 25px;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.habitaciones .habitacion-fulles p{
+    margin: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/*Contacto*/
+
+.contactenos{
+    padding: 50vh;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    width: auto;
+}
+
+.contactenos h2 {
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.contactenos h2 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.877);
+    background-color: rgba(0, 136, 255, 0.508);
+    padding: 10px;
+    border-radius: 15px;
+}
+/*pagina de contacto*/
+.registro-contacto{
+    margin: 0px 60px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgrey;
+    height: 76vh;
+}
+
+.registro-contacto h2{
+    font-size: 35px;
+    margin: 20px;
+}
+
+.contacto{
+    text-align: center;
+}
+
+.contacto div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contacto div label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+/*ubicacion*/
+
+.ubicacion{
+    width: auto;
+    height: auto;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(250, 235, 215, 0.847);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.ubicacion h2{
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.mapa iframe{
+    height: 450px;
+    width: 600px;
+
+}
+
+/* FOOTER */
+
+footer{
+    width: auto;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    margin-top: auto;
+
+}
+
+.pie-pagina h2{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+footer p{
+    text-align: center;
+    color: aliceblue;
+}
+.pie-pagina{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes img{
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+}
