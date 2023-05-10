@@ -12,6 +12,36 @@
 <body>
     <!--Barra de navegacion-->
     <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><h2>Resort Beach</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicio.html">Servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/habitaciones.html">Habitaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/ubicacion.html">Ubicacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--
         <h1>Resort Beach</h1>
         </nav>
         <nav class="navegador">        
@@ -22,7 +52,7 @@
             <li><a href="./pages/ubicacion.html">Ubicacion</a></li>
             <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul> 
-        </nav>
+        </nav>-->
     </header>
     <main>
         <section div class="bienvenidos">
@@ -35,24 +65,28 @@
             <div class="servicio-contenido">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, possimus optio voluptatibus pariatur voluptatum ducimus, iste necessitatibus nostrum nemo a neque quod debitis magnam nisi sequi ratione odio! Voluptate, iusto!Lorem
                 </p>
-                <div class="imagen-servicio">
-                    <img src="./img/salon-spa.jpg" alt="salon-spa">
-                    <img src="./img/pileta.jpg" alt="pileta">
-                    <img src="./img/limpieza.jpg"alt="limpieza">                
+                <!--Galeria de servicios-->
+                <div class="imagen-container">
+                    <div class="grid-item salon"><img src="./img/salon-spa.jpg" alt="salon-spa"></div>
+                    <div class="grid-item pileta"><img src="./img/pileta.jpg" alt="pileta"></div>
+                    <div class="grid-item limpieza"><img src="./img/limpieza.jpg"alt="limpieza"></div>
+                    <div class="grid-item hall"><img src="./img/hall.jpg"alt="hall"></div>
+                    <div class="grid-item jacuzzi"><img src="./img/jacuzzi.jpg"alt="jacuzzi"></div>
+                    <div class="grid-item masaje"><img src="./img/masaje.jpg"alt="masaje"></div>
                 </div>
             </div>    
         </section>
         <section div class="habitaciones">
             <h2>Habitaciones</h2>
             <div class="habitacion-comun">
-                <img src="./img/hab-simple.jpg" alt="">
+                <img src="./img/hab-simple.jpg" alt="habitacion-comun">
                 <div class="habitacion-comunes">
                     <h3>Habitacion Simple</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe aspernatur fugiat odit reprehenderit vel consequuntur eveniet architecto voluptatem porro repellendus nulla officia nostrum, officiis dolor laboriosam eos. Quia, ipsum. Dolor?</p>
                 </div>
             </div>
             <div class="habitacion-full">
-                <img src="./img/hab-completa.jpg" alt="">
+                <img src="./img/hab-completa.jpg" alt="habitacion-full">
                 <div class="habitacion-fulles">
                 <h3>Habitacion Suite</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint voluptates esse et molestiae illum officiis quod id pariatur porro, expedita tenetur laudantium architecto, earum, veritatis fugiat excepturi maxime dolorum?</p>
@@ -66,7 +100,7 @@
         <section div class="ubicacion">
                 <h2>Nuestra ubicacion</h2>
                 <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8200.660787229532!2d-58.38573955007103!3d-34.603960788052504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacfdd1fa037%3A0xf1b1f26b0eab3053!2sAv.%209%20de%20Julio%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1681833286535!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8200.660787229532!2d-58.38573955007103!3d-34.603960788052504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacfdd1fa037%3A0xf1b1f26b0eab3053!2sAv.%209%20de%20Julio%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1681833286535!5m2!1ses-419!2sar" width="600" height="400" style="border:1px;" allowfullscreen="" loading="lazy"referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>

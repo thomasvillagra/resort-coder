@@ -1,19 +1,15 @@
 /* RESET */
 * {
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;   
 }
-
 a {
     text-decoration: none;
 }
-
 h2{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
-
 body{
     display: flex;
     flex-direction: column;
@@ -21,12 +17,11 @@ body{
     flex-wrap: wrap;
     box-sizing: border-box;
     width: auto;
-    
 }
-/* HEADER */
 
+/* HEADER */
 header{
-    background-color: black;
+    background-color: rgba(93, 81, 81, 0.236);
     width: 100%;
     height: auto;
     display: flex;
@@ -36,40 +31,26 @@ header{
     box-sizing: border-box; 
     overflow: hidden;
 }
-h1 {
-    font-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: aliceblue;
-    margin: 20px;
-    box-sizing: border-box;
+.navbar .container-fluid a{
+    color: rgb(200, 218, 233);
 }
-
-.navegador ul{
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    margin: 10px;
-    list-style: none;
+.navbar-nav li a {
+    color: rgb(200, 218, 233);
 }
-
-.navegador ul li{
-    padding: 5px;
-    margin: 10px;
-    box-sizing: border-box;
+nav{
+    background-color: rgba(24, 4, 4, 0.518);
+    width: 100%;
 }
-
-header nav ul li a{
-    text-decoration: none;
-    color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(200, 218, 233);
 }
-
+.navbar-light .navbar-toggler {
+    color: rgba(200, 218, 233);
+    border-color: rgba(0,0,0,.1);
+}
 
 /* MAIN */
 /*bienvenidos*/
-
 .bienvenidos{
     background-image: url(../img/welcome.jpg);
     background-attachment: fixed;
@@ -85,25 +66,20 @@ header nav ul li a{
     justify-content: center;
     text-align: center;
     color: aliceblue;
-
 }
-
 .bienvenidos h2{
     padding: 40px;
     font-size: 80px;
     -webkit-text-stroke: 0.5px black;
 }
-
 .bienvenidos p{
     font-size: 25px;
     margin: 40px;
     padding-left: 30%;
     padding-right: 30%;
-    
 }
 
 /*servicio*/
-
 .servicio{
     height: auto ;
     width: auto;
@@ -112,18 +88,16 @@ header nav ul li a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-bottom: 50px;
 }
-
 .servicio h2{
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.636); 
     font-size: 45px;
     text-align: center;
-    color: white
-    
+    color: white   
 }
-
 .servicio-contenido{
     font-size: 30px;
     display: flex;
@@ -134,45 +108,41 @@ header nav ul li a{
     box-sizing: border-box;
     height: auto;
 }
-
 .servicio-contenido p{
     padding: 10px 200px 50px 200px;
     font-size: 20px;
     color: aliceblue;
     font-family: Arial , Helvetica, sans-serif;
     text-decoration: solid;
-    background-color: rgba(0, 0, 0, 0.636);
-    
+    background-color: rgba(0, 0, 0, 0.636);   
 }
-
-.imagen-servicio{
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: auto;
+.imagen-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+.salon{
+    grid-column: 1/1;
+    grid-row: 1/2;
     overflow: hidden;
+    object-fit: cover;
 }
-
-.imagen-servicio img{
-    margin: 5px;
-    border: 5px solid grey;
+.imagen-container img{
+    border: 7px solid rgb(60, 50, 50);
     border-radius: 5px;
-    width: 420px;
-    height: 320px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    box-sizing: border-box;
-    overflow: hidden;
+    width: 370px;
+    height: 280px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+    object-fit: cover;
 }
-
 
 /*habitaciones*/
-
 .habitaciones{
     height: 100%;
     width: auto;
+    padding-top: 30px;
     padding-bottom: 50px;
     background-image: url(../img/pasillo.jpg);
     background-attachment: fixed;
@@ -180,10 +150,8 @@ header nav ul li a{
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
 }
-
 .habitaciones h2{
     margin-bottom: 50px;
     padding: 20px;
@@ -194,21 +162,25 @@ header nav ul li a{
 }   
 /*habitacion comun*/
 .habitacion-comun{
-    margin-left: 7%;
-    margin-right: 7%;
-    display: flex;
-    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: 
+    "img habitacion-comunes"
+    "img habitacion-comunes"
+    ;
     align-items: center;
 }
-
 .habitaciones .habitacion-comun img{
     width: 400px;
     height: 270px;
     border: 5px solid grey;
     border-radius: 5px;
     box-sizing: border-box;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
 }
-
 .habitaciones .habitacion-comun .habitacion-comunes{
     padding: 30px;
     display: flex;
@@ -217,43 +189,41 @@ header nav ul li a{
     justify-content: start;
     align-items: center;
     background-color: rgba(240, 248, 255, 0.221);
-    margin: 35px 30px 35px 50px;
+    margin: 35px 50px 35px 50px;
 }
-
 .habitaciones .habitacion-comunes h3{
     margin: 25px;
     color: aliceblue;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .habitaciones .habitacion-comunes p{
-    margin: 30px;
     color: aliceblue;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 30px;
-    padding-right: 30px; 
 }
 /*habitacion full*/
-
 .habitacion-full{
     margin: 25px;
-    margin-left: 7%;
-    margin-right: 7%;
-    display: flex;
-    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: 
+    "img habitacion-fulles"
+    "img habitacion-fulles"
+    ;
     align-items: center;
 }
-
 .habitaciones .habitacion-full img{
     width: 400px;
     height: 270px;
     border: 5px solid grey;
     border-radius: 5px;
     box-sizing: border-box;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
 }
-
 .habitaciones .habitacion-full .habitacion-fulles{
     padding: 30px;
     display: flex;
@@ -262,55 +232,50 @@ header nav ul li a{
     justify-content: start;
     align-items: center;
     background-color: rgba(240, 248, 255, 0.221);
-    margin: 35px 30px 35px 50px;
+    margin: 35px 50px 35px 50px;
 }
-
 .habitaciones .habitacion-fulles h3{
     margin: 25px;
     color: aliceblue;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .habitaciones .habitacion-fulles p{
-    margin: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
     color: aliceblue;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
-
 /*Contacto*/
-
 .contactenos{
-    padding: 50vh;
+    padding: 30%;
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: auto;
+    height: 100vh;
     width: auto;
 }
 
 .contactenos h2 {
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: auto;
+    text-align: center;
+
 }
 
 .contactenos h2 a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.877);
-    background-color: rgba(0, 136, 255, 0.508);
-    padding: 10px;
+    background-color: rgba(36, 140, 231, 0.29);
     border-radius: 15px;
+    border: 5px solid rgba(0, 0, 0, 0.67);
+}
+.contactenos h2 a:hover{
+    background-color: rgba(0, 0, 255, 0.2);
 }
 /*pagina de contacto*/
 .registro-contacto{
@@ -345,7 +310,9 @@ header nav ul li a{
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
 }
-
+input:focus{
+    border: 2px solid black;
+}
 /*ubicacion*/
 
 .ubicacion{
@@ -363,19 +330,12 @@ header nav ul li a{
 .ubicacion h2{
     font-size: 45px;
     text-align: center;
-
-}
-
-.mapa iframe{
-    height: 450px;
-    width: 600px;
-
+    padding: 20px;
 }
 
 /* FOOTER */
-
 footer{
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 20px;
     background-color: black;
@@ -404,3 +364,104 @@ footer p{
     height: 35px;
     width: 35px;
 }
+
+@media screen and (max-width: 1200px) {
+    main{
+        width: 100%;
+    }
+    .imagen-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 850px){
+    main{
+        width: 100%;
+    }
+    
+    .bienvenidos{
+        background-position: center;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: aliceblue;
+    }
+    .habitacion-comun{
+        margin: 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .habitacion-comunes{
+        margin: 0px;
+        padding: 0px;
+    }
+    .habitacion-full{
+        margin: 0px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .habitacion-fulles{
+        margin: 0px;
+        padding: 0px;
+    }
+    .ubicacion{
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+}
+@media screen and (max-width:750px){
+    main{
+        width: 100%;
+    }
+    .bienvenidos{
+        padding-top: 30%;
+        justify-content: start;
+        align-items: center;
+    }
+    .bienvenidos p{
+        padding: 5%;
+        margin: 0px;
+    }
+    .imagen-container{
+        grid-template-columns:1fr;
+        gap: 5px;
+        overflow: hidden;
+    }
+    .imagen-container img{
+        width: 75%;
+        object-fit: cover;
+    } 
+    .contactenos{
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:645px){
+    .servicio-contenido p{
+        padding: 5%;
+    }
+    .ubicacion{
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+    .ubicacion .mapa iframe{
+        width: 450px;
+        height: 300px;
+    }
+}
+
