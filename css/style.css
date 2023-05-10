@@ -58,7 +58,7 @@ nav{
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -464,6 +464,12 @@ footer p{
 }
 
 @media screen and (max-width:645px){
+    .bienvenidos h2{
+        font-size: 60px;
+    }
+    .bienvenidos p{
+        font-size: 20px;
+    }
     .servicio-contenido p{
         padding: 5%;
     }
@@ -472,7 +478,7 @@ footer p{
         height: 100vh;
     }
     .ubicacion .mapa iframe{
-        width: 450px;
+        width: 100%;
         height: 300px;
     }
 }
