@@ -21,7 +21,7 @@ body{
 
 /* HEADER */
 header{
-    background-color: rgba(93, 81, 81, 0.236);
+    background-color: rgba(86, 81, 93, 0.236);
     width: 100%;
     height: auto;
     display: flex;
@@ -80,7 +80,9 @@ nav{
 }
 
 /*servicio*/
+
 .servicio{
+    padding-top: 50px;
     height: auto ;
     width: auto;
     background-image: url(../img/sombrilla.jpg);
@@ -90,13 +92,34 @@ nav{
     background-position: center;
     padding-bottom: 50px;
 }
-.servicio h2{
+.servicioindex{
+    padding-top: 50px;
+    height: auto ;
+    width: auto;
+    background-image: url(../img/sombrilla.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    
+}
+.servicioindex h2{
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: rgba(0, 0, 0, 0.636); 
     font-size: 45px;
     text-align: center;
-    color: white   
+    color: white;
+}
+.servicio h2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.636); 
+    font-size: 45px;
+    text-align: center;
+    color: white;
 }
 .servicio-contenido{
     font-size: 30px;
@@ -127,6 +150,7 @@ nav{
     overflow: hidden;
     object-fit: cover;
 }
+
 .imagen-container img{
     border: 7px solid rgb(60, 50, 50);
     border-radius: 5px;
@@ -212,7 +236,7 @@ nav{
     "img habitacion-fulles"
     "img habitacion-fulles"
     ;
-    align-items: center;
+    align-items:center;
 }
 .habitaciones .habitacion-full img{
     width: 400px;
@@ -248,13 +272,13 @@ nav{
 
 /*Contacto*/
 .contactenos{
-    padding: 30%;
+    padding-bottom: 20px;
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 100%;
     width: auto;
 }
 
@@ -264,7 +288,7 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    height: 100vh;
 }
 
 .contactenos h2 a{
@@ -278,25 +302,20 @@ nav{
     background-color: rgba(0, 0, 255, 0.2);
 }
 /*pagina de contacto*/
-main registro .registro-contacto{
+.registro-contacto{
     width: 100%;
     height: 100%;
+    padding-right: 35%;
+    padding-left: 35%;
     padding-bottom: 10%;
-}
-.registro-contacto{
-    margin: 0px 60px 0px 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     background-color: lightgrey;
-    height: 76vh;
+  
 }
 
 .registro-contacto h2{
     font-size: 35px;
-    margin: 20%;
-
+    margin: 20px;
+    text-align: center;
 }
 
 .contacto{
@@ -308,7 +327,6 @@ main registro .registro-contacto{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .contacto div label{
@@ -332,8 +350,7 @@ input:focus{
 
 .ubicacion{
     width: auto;
-    height: auto;
-    padding: 5%;
+    height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -343,11 +360,22 @@ input:focus{
 }
 
 .ubicacion h2{
+    width: 100%;
     font-size: 45px;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.636);
 }
-
+.ubicacion p {
+    padding: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: Arial , Helvetica, sans-serif;
+    text-decoration: solid;
+    background-color: rgba(0, 0, 0, 0.636);
+}
 /* FOOTER */
 footer{
     width: 100%;
@@ -469,12 +497,24 @@ footer p{
 @media screen and (max-width:645px){
     .bienvenidos h2{
         font-size: 60px;
+        width: 100%;
     }
     .bienvenidos p{
         font-size: 20px;
     }
     .servicio-contenido p{
         padding: 5%;
+    }
+    .habitaciones .habitacion-comun img {
+        width: 350px;
+        height: 220px;
+    }
+    .habitaciones .habitacion-full img {
+        width: 350px;
+        height: 220px;
+    }
+    .contactenos h2{
+        font-size: 35px;
     }
     .ubicacion{
         justify-content: space-evenly;
