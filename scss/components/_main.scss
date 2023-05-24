@@ -122,11 +122,9 @@ main {
 
             .habitacion-comunes {
                 padding: 30px;
-                display: flex;
+                @include flex(flex, start, center);
                 flex-wrap: wrap;
                 flex-direction: column;
-                justify-content: start;
-                align-items: center;
                 background-color:nth($colores,3);
                 margin: 35px 50px 35px 50px;
 
@@ -167,11 +165,9 @@ main {
 
             .habitacion-fulles {
                 padding: 30px;
-                display: flex;
+                @include flex(flex, start, center);
                 flex-wrap: wrap;
                 flex-direction: column;
-                justify-content: start;
-                align-items: center;
                 background-color: nth($colores,3);
                 margin: 35px 50px 35px 50px;
 
@@ -198,9 +194,7 @@ main {
 
         h2 {
             font-size: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, center, center);
             text-align: center;
             height: 100vh;
 
@@ -221,9 +215,7 @@ main {
     .ubicacion {
         width: auto;
         height: 90vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(flex, space-around, center);
         background-color:nth($colores,1);
         box-sizing: border-box;
         flex-wrap: wrap;

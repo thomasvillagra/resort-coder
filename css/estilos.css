@@ -144,10 +144,10 @@ main p {
     .habitaciones .habitacion-comun .habitacion-comunes {
       padding: 30px;
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
       justify-content: start;
       align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
       background-color: rgba(240, 248, 255, 0.221);
       margin: 35px 50px 35px 50px; }
       .habitaciones .habitacion-comun .habitacion-comunes h3 {
@@ -177,10 +177,10 @@ main p {
     .habitaciones .habitacion-full .habitacion-fulles {
       padding: 30px;
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
       justify-content: start;
       align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
       background-color: rgba(240, 248, 255, 0.221);
       margin: 35px 50px 35px 50px; }
       .habitaciones .habitacion-full .habitacion-fulles h3 {
