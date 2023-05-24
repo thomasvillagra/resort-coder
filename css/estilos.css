@@ -1,0 +1,570 @@
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: auto; }
+
+/*---HEADER---*/
+header {
+  background-color: rgba(86, 81, 93, 0.236);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden; }
+  header .navbar .navbar-expand-lg .navbar-light {
+    background-color: rgba(24, 4, 4, 0.518);
+    width: 100%; }
+    header .navbar .navbar-expand-lg .navbar-light .container-fluid .navbar-brand {
+      color: #c8dae9; }
+    header .navbar .navbar-expand-lg .navbar-light .container-fluid .navbar-toogler {
+      color: #c8dae9;
+      border-color: rgba(7, 7, 7, 0.1); }
+    header .navbar .navbar-expand-lg .navbar-light .container-fluid .collapse .navbar-collaps .navbar-nav .nav-item .nav-link {
+      color: #c8dae9; }
+
+/*--- MAIN ---*/
+main .bienvenidos {
+  background-image: url(../img/welcome.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+  padding-top: 0px; }
+  main .bienvenidos h2 {
+    font-size: 60px;
+    padding: 40px;
+    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.636);
+    width: 100%;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.2); }
+
+main p {
+  font-size: 25px;
+  margin: 40px;
+  padding-left: 30%;
+  padding-right: 30%; }
+
+.servicioindex {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  height: auto;
+  width: auto;
+  background-image: url(../img/sombrilla.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px; }
+  .servicioindex h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.636);
+    font-size: 45px;
+    text-align: center;
+    color: aliceblue; }
+  .servicioindex .servicio-contenido {
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto; }
+    .servicioindex .servicio-contenido p {
+      padding: 10px 5px 50px 5px;
+      font-size: 20px;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: solid;
+      background-color: rgba(0, 0, 0, 0.636); }
+
+.habitaciones {
+  height: 100%;
+  width: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-image: url(../img/pasillo.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  flex-wrap: wrap; }
+  .habitaciones h2 {
+    margin-bottom: 50px;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(36, 140, 231, 0.29); }
+  .habitaciones .habitacion-comun {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: "img habitacion-comunes" "img habitacion-comunes";
+    align-items: center; }
+    .habitaciones .habitacion-comun img {
+      width: 400px;
+      height: 270px;
+      border: 5px solid grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44); }
+      .habitaciones .habitacion-comun img:hover {
+        transition-duration: 2s;
+        transform: scale(1.1); }
+    .habitaciones .habitacion-comun .habitacion-comunes {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      background-color: rgba(240, 248, 255, 0.221);
+      margin: 35px 50px 35px 50px; }
+      .habitaciones .habitacion-comun .habitacion-comunes h3 {
+        margin: 25px;
+        color: aliceblue;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif; }
+  .habitaciones .habitacion-full {
+    margin: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: "img habitacion-fulles" "img habitacion-fulles";
+    align-items: center; }
+    .habitaciones .habitacion-full img {
+      width: 400px;
+      height: 270px;
+      border: 5px solid grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44); }
+      .habitaciones .habitacion-full img:hover {
+        transition-duration: 2s;
+        transform: scale(1.1); }
+    .habitaciones .habitacion-full .habitacion-fulles {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      background-color: rgba(240, 248, 255, 0.221);
+      margin: 35px 50px 35px 50px; }
+      .habitaciones .habitacion-full .habitacion-fulles h3 {
+        margin: 25px;
+        color: aliceblue;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif; }
+
+.contactenos {
+  padding-bottom: 20px;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: auto; }
+  .contactenos h2 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; }
+    .contactenos h2 a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.636);
+      background-color: rgba(36, 140, 231, 0.29);
+      border-radius: 15px;
+      border: 5px solid rgba(0, 0, 0, 0.636); }
+      .contactenos h2 a:hover {
+        background-color: rgba(36, 140, 231, 0.29); }
+
+.ubicacion {
+  width: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  flex-wrap: wrap; }
+  .ubicacion h2 {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.636); }
+
+/*---FOOTER---*/
+footer {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: black;
+  margin-top: auto; }
+  footer .pie-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    footer .pie-pagina a h2 {
+      color: aliceblue;
+      font-size: 30px; }
+    footer .pie-pagina .redes a img {
+      margin: 5px;
+      height: 35px;
+      width: 35px; }
+  footer p {
+    text-align: center;
+    color: aliceblue; }
+
+/*--- PAGINA DE SERVICIO ---*/
+main .servicio {
+  padding-top: 50px;
+  height: auto;
+  width: auto;
+  background-image: url(../img/sombrilla.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50px; }
+  main .servicio h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.636);
+    font-size: 45px;
+    text-align: center;
+    color: white; }
+  main .servicio .servicio-contenido {
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    height: auto; }
+    main .servicio .servicio-contenido .imagen-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px; }
+      main .servicio .servicio-contenido .imagen-container .grid-item img {
+        border: 7px solid #3c3232;
+        border-radius: 5px;
+        width: 370px;
+        height: 280px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+        object-fit: cover; }
+
+/*--- PAGINA DE HABITACIONES ---*/
+main .habitaciones {
+  height: 100%;
+  width: auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-image: url(../img/pasillo.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  flex-wrap: wrap; }
+  main .habitaciones h2 {
+    margin-bottom: 50px;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgba(4, 6, 4, 0.448); }
+  main .habitaciones .habitacion-comun {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: "img habitacion-comunes" "img habitacion-comunes";
+    align-items: center; }
+    main .habitaciones .habitacion-comun img {
+      width: 400px;
+      height: 270px;
+      border: 5px solid grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44); }
+    main .habitaciones .habitacion-comun .habitacion-comunes {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      background-color: rgba(240, 248, 255, 0.221);
+      margin: 35px 50px 35px 50px; }
+      main .habitaciones .habitacion-comun .habitacion-comunes h3 {
+        margin: 25px;
+        color: aliceblue;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif; }
+      main .habitaciones .habitacion-comun .habitacion-comunes p {
+        color: aliceblue;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif; }
+  main .habitaciones .habitacion-full {
+    margin: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-areas: "img habitacion-fulles" "img habitacion-fulles";
+    align-items: center; }
+    main .habitaciones .habitacion-full img {
+      width: 400px;
+      height: 270px;
+      border: 5px solid grey;
+      border-radius: 5px;
+      box-sizing: border-box;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44); }
+    main .habitaciones .habitacion-full .habitacion-fulles {
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      background-color: rgba(240, 248, 255, 0.221);
+      margin: 35px 50px 35px 50px; }
+      main .habitaciones .habitacion-full .habitacion-fulles h3 {
+        margin: 25px;
+        color: aliceblue;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif; }
+      main .habitaciones .habitacion-full .habitacion-fulles p {
+        color: aliceblue;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif; }
+
+/*--- PAGINA DE CONTACTO ---*/
+main .registro-contacto {
+  width: 100%;
+  height: auto;
+  padding-right: 35%;
+  padding-left: 35%;
+  padding-bottom: 10%;
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.975304) 0%, #555575 33%, rgba(0, 212, 255, 0.922082) 100%); }
+  main .registro-contacto h2 {
+    text-decoration: solid;
+    font-size: 50px;
+    padding-top: 20px;
+    margin: 0px 20px 20px 20px;
+    text-align: center; }
+  main .registro-contacto .contacto {
+    text-align: center; }
+    main .registro-contacto .contacto div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .registro-contacto .contacto div label {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px; }
+      main .registro-contacto .contacto div input {
+        border: 2px solid black;
+        font-size: 16px;
+        margin: 0;
+        padding: 15px;
+        width: 100%;
+        color: #64696d;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03); }
+        main .registro-contacto .contacto div input:focus {
+          border: 2px solid black; }
+    main .registro-contacto .contacto .enviar input {
+      color: black;
+      border-radius: 5px; }
+      main .registro-contacto .contacto .enviar input:hover {
+        background-color: rgba(24, 244, 35, 0.405); }
+
+/*---PAGINA DE UBICACION ---*/
+main .ubicacion {
+  width: auto;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.847);
+  box-sizing: border-box;
+  flex-wrap: wrap; }
+  main .ubicacion h2 {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.636); }
+  main .ubicacion p {
+    padding: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: Arial , Helvetica, sans-serif;
+    text-decoration: solid;
+    background-color: rgba(0, 0, 0, 0.636); }
+
+/*--- MEDIAQUERIES ---*/
+@media screen and (max-width: 1200px) {
+  main {
+    width: 100%; }
+    main .servicio .servicio-contenido .imagen-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      overflow: hidden; } }
+
+@media screen and (max-width: 850px) {
+  main {
+    width: 100%; }
+    main .bienvenidos {
+      background-position: center;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: aliceblue; }
+      main .bienvenidos .habitacion-comun {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        main .bienvenidos .habitacion-comun .habitacion-comunes {
+          margin: 0px;
+          padding: 0px; }
+      main .bienvenidos .habitacion-full {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        main .bienvenidos .habitacion-full .habitacion-fulles {
+          margin: 0px;
+          padding: 0px; }
+    main .ubicacion {
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center; } }
+
+@media screen and (max-width: 750px) {
+  main {
+    width: 100%; }
+    main .bienvenidos {
+      padding-top: 20%;
+      justify-content: center;
+      align-items: center; }
+      main .bienvenidos p {
+        padding: 5%;
+        margin: 0px; }
+    main .servicio .servicio-contenido .imagen-container {
+      grid-template-columns: 1fr;
+      gap: 5px;
+      overflow: hidden; }
+      main .servicio .servicio-contenido .imagen-container img {
+        width: 75%;
+        object-fit: cover; }
+    main .habitaciones .habitacion-comun {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .habitaciones .habitacion-comun img {
+        width: 350px;
+        height: 220px; }
+      main .habitaciones .habitacion-comun .habitaciones-comunes h3 {
+        font-size: 10px;
+        margin: 0px; }
+    main .habitaciones .habitacion-full {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .habitaciones .habitacion-full img {
+        width: 350px;
+        height: 220px; }
+      main .habitaciones .habitacion-full .habitaciones-fulles h3 {
+        font-size: 10px; }
+    main .contactenos {
+      height: 100vh; } }
+
+@media screen and (max-width: 645px) {
+  .bienvenidos h2 {
+    font-size: 60px; }
+  .bienvenidos p {
+    display: none; }
+  .servicioindex .servicio-contenido p {
+    padding: 5px; }
+  .habitaciones .habitacion-comun img {
+    width: 350px;
+    height: 220px; }
+  .habitaciones .habitacion-full img {
+    width: 350px;
+    height: 220px; }
+  .contactenos h2 {
+    font-size: 30px; }
+  .ubicacion {
+    justify-content: space-evenly;
+    height: 100vh; }
+    .ubicacion .mapa iframe {
+      width: 100%;
+      height: 300px; } }

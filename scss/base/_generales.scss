@@ -1,0 +1,20 @@
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;   
+}
+a {
+    text-decoration: none;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: auto;
+}

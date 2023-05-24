@@ -1,0 +1,105 @@
+/*--- PAGINA DE HABITACIONES ---*/
+main{
+    .habitaciones{
+        height: 100%;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        background-image: url(../img/pasillo.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        h2{
+            margin-bottom: 50px;
+            padding: 20px;
+            color: aliceblue;
+            font-size: 50px;
+            text-align: center;
+            background-color: rgba(4, 6, 4, 0.448);
+        }
+        .habitacion-comun{
+            margin-left: 5%;
+            margin-right: 5%;
+            display: grid;
+            grid-template-areas: 
+            "img habitacion-comunes"
+            "img habitacion-comunes";
+            align-items: center;
+            img{
+                width: 400px;
+                height: 270px;
+                border: 5px solid grey;
+                border-radius: 5px;
+                box-sizing: border-box;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+            }
+            .habitacion-comunes{
+                padding: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                background-color: rgba(240, 248, 255, 0.221);
+                margin: 35px 50px 35px 50px;
+                h3{
+                    margin: 25px;
+                    color: aliceblue;
+                    font-size: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                p{
+                    color: aliceblue;
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+        .habitacion-full{
+            margin: 25px;
+            margin-left: 5%;
+            margin-right: 5%;
+            display: grid;
+            grid-template-areas: 
+            "img habitacion-fulles"
+            "img habitacion-fulles";
+            align-items:center;
+            img{
+                width: 400px;
+                height: 270px;
+                border: 5px solid grey;
+                border-radius: 5px;
+                box-sizing: border-box;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+            }
+            .habitacion-fulles{
+                padding: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                background-color: rgba(240, 248, 255, 0.221);
+                margin: 35px 50px 35px 50px;
+                h3{
+                    margin: 25px;
+                    color: aliceblue;
+                    font-size: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                p{
+                    color: aliceblue;
+                    font-size: 20px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+    }
+}

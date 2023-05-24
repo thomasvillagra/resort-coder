@@ -45,8 +45,8 @@ nav{
     color: rgb(200, 218, 233);
 }
 .navbar-light .navbar-toggler {
-    color: rgba(200, 218, 233);
-    border-color: rgba(0,0,0,.1);
+    color: rgb(200, 218, 233);
+    border-color: rgb(0,0,0,.1);
 }
 
 /* MAIN */
@@ -234,8 +234,7 @@ nav{
     display: grid;
     grid-template-areas: 
     "img habitacion-fulles"
-    "img habitacion-fulles"
-    ;
+    "img habitacion-fulles";
     align-items:center;
 }
 .habitaciones .habitacion-full img{
@@ -309,7 +308,7 @@ nav{
     padding-left: 35%;
     padding-bottom: 10%;
     background-color: lightgrey;
-  
+
 }
 
 .registro-contacto h2{

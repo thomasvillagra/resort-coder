@@ -1,0 +1,49 @@
+/*--- PAGINA DE SERVICIO ---*/
+main{
+    .servicio{
+        padding-top: 50px;
+        height: auto ;
+        width: auto;
+        background-image: url(../img/sombrilla.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 50px;
+        h2{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: rgba(0, 0, 0, 0.636); 
+            font-size: 45px;
+            text-align: center;
+            color: white;
+        }
+        .servicio-contenido{
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column  ;
+            justify-content: center;
+            text-align: center;
+            box-sizing: border-box;
+            height: auto;
+            .imagen-container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 5px;
+                .grid-item{
+                    img{
+                        border: 7px solid rgb(60, 50, 50);
+                        border-radius: 5px;
+                        width: 370px;
+                        height: 280px;
+                        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+                        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+                        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.44);
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

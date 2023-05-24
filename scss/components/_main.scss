@@ -1,0 +1,245 @@
+/*--- MAIN ---*/
+main {
+    .bienvenidos {
+        background-image: url(../img/welcome.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: nth($colores,1);
+        padding-top: 0px;
+
+        h2 {
+            font-size: 60px;
+            padding: 40px;
+            -webkit-text-stroke: 0.5px nth($colores,5);
+            width: 100%; 
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transform: scale(1.2);
+            }
+        }
+
+        p {
+            font-size: 25px;
+            margin: 40px;
+            padding-left: 30%;
+            padding-right: 30%;
+        }
+    }
+
+    .servicioindex {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        height: auto;
+        width: auto;
+        background-image: url(../img/sombrilla.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 50px;
+
+        h2 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: nth($colores,5);
+            font-size: 45px;
+            text-align: center;
+            color: nth($colores,1);
+        }
+
+        .servicio-contenido {
+            font-size: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            box-sizing: border-box;
+            height: auto;
+
+            p {
+                padding: 10px 5px 50px 5px;
+                font-size: 20px;
+                color: nth($colores,1);
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: solid;
+                background-color: nth($colores,5);
+            }
+        }
+    }
+
+    .habitaciones {
+        height: 100%;
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        background-image: url(../img/pasillo.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+
+        h2 {
+            margin-bottom: 50px;
+            padding: 20px;
+            color:nth($colores,1);
+            font-size: 50px;
+            text-align: center;
+            background-color: nth($colores,4);
+        }
+
+        .habitacion-comun {
+            margin-left: 5%;
+            margin-right: 5%;
+            display: grid;
+            grid-template-areas:
+                "img habitacion-comunes"
+                "img habitacion-comunes"
+            ;
+            align-items: center;
+
+            img {
+                width: 400px;
+                height: 270px;
+                border: 5px solid nth($colores,2);
+                border-radius: 5px;
+                box-sizing: border-box;
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+                &:hover{
+                    transition-duration: 2s;
+                    transform: scale(1.1);
+                }
+            }
+
+            .habitacion-comunes {
+                padding: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                background-color:nth($colores,3);
+                margin: 35px 50px 35px 50px;
+
+                h3 {
+                    margin: 25px;
+                    color: nth($colores,1);
+                    font-size: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+        }
+
+        .habitacion-full {
+            margin: 25px;
+            margin-left: 5%;
+            margin-right: 5%;
+            display: grid;
+            grid-template-areas:
+                "img habitacion-fulles"
+                "img habitacion-fulles"
+            ;
+            align-items: center;
+
+            img {
+                width: 400px;
+                height: 270px;
+                border: 5px solid nth($colores,2);
+                border-radius: 5px;
+                box-sizing: border-box;
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.44);
+                &:hover{
+                    transition-duration: 2s;
+                    transform: scale(1.1);
+                }
+            }
+
+            .habitacion-fulles {
+                padding: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                background-color: nth($colores,3);
+                margin: 35px 50px 35px 50px;
+
+                h3 {
+                    margin: 25px;
+                    color: nth($colores,1);
+                    font-size: 30px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+
+        }
+    }
+
+    .contactenos {
+        padding-bottom: 20px;
+        background-image: url(../img/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100%;
+        width: auto;
+
+        h2 {
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+
+            a {
+                text-decoration: none;
+                color: nth($colores,5);
+                background-color: nth($colores,4);
+                border-radius: 15px;
+                border: 5px solid nth($colores,5);
+
+                &:hover {
+                    background-color: nth($colores,4);
+                }
+            }
+        }
+    }
+
+    .ubicacion {
+        width: auto;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color:nth($colores,1);
+        box-sizing: border-box;
+        flex-wrap: wrap;
+
+        h2 {
+            width: 100%;
+            font-size: 45px;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: nth($colores,1);
+            background-color: nth($colores,5);
+        }
+    }

@@ -1,0 +1,33 @@
+/*---FOOTER---*/
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: black;
+    margin-top: auto;
+    .pie-pagina{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            h2{
+                color: aliceblue;
+                font-size: 30px;
+            }
+        }
+        .redes{
+            a{
+                img{
+                    margin: 5px;
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+        }
+    }
+    p{
+        text-align: center;
+        color: aliceblue;
+    }
+}
