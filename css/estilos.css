@@ -61,10 +61,7 @@ main .bienvenidos {
     font-size: 60px;
     padding: 40px;
     -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.636);
-    width: 100%;
-    transition-duration: 3s;
-    transition-timing-function: ease-in-out;
-    transform: scale(1.2); }
+    width: 100%; }
 
 main p {
   font-size: 25px;
@@ -93,10 +90,10 @@ main p {
   .servicioindex .servicio-contenido {
     font-size: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     box-sizing: border-box;
     height: auto; }
     .servicioindex .servicio-contenido p {

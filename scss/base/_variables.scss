@@ -1,6 +1,16 @@
+//lista
 $colores:
 aliceblue,
 grey,
 rgba(240, 248, 255, 0.221),
 rgba(36, 140, 231, 0.29),
 rgba(0, 0, 0, 0.636);
+
+//Mixins
+@mixin flex ($flex,$justify,$aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+

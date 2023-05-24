@@ -21,10 +21,7 @@ main {
             font-size: 60px;
             padding: 40px;
             -webkit-text-stroke: 0.5px nth($colores,5);
-            width: 100%; 
-            transition-duration: 3s;
-            transition-timing-function: ease-in-out;
-            transform: scale(1.2);
+            width: 100%;
             }
         }
 
@@ -59,11 +56,9 @@ main {
 
         .servicio-contenido {
             font-size: 30px;
-            display: flex;
+            @include flex(flex,center,center);
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
             box-sizing: border-box;
             height: auto;
 
