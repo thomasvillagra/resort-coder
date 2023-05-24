@@ -113,6 +113,11 @@
                     h3 {
                         font-size: 10px;
                         margin: 0px;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                        padding: 0px;
                     }
                 }
             }
@@ -132,6 +137,12 @@
                 .habitaciones-fulles {
                     h3 {
                         font-size: 10px;
+                        text-align: center;
+                        padding: 0px;
+                    }
+                    p{
+                        text-align: center;
+                        padding: 0px;
                     }
                 }
             }
@@ -168,6 +179,14 @@
                 width: 350px;
                 height: 220px;
             }
+            .habitacion-comunes{
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                }
+            }
         }
 
         .habitacion-full {
@@ -183,6 +202,15 @@
             font-size: 30px;
         }
     } 
+    main{
+        .registro-contacto{
+            h2{
+                margin: 0px;
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+    }
 
     .ubicacion {
         justify-content: space-evenly;

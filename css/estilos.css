@@ -45,6 +45,7 @@ main .bienvenidos {
   background-image: url(../img/welcome.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
+  object-fit: fill;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -63,7 +64,7 @@ main .bienvenidos {
     -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.636);
     width: 100%; }
 
-main p {
+main .pbienvenidos p {
   font-size: 25px;
   margin: 40px;
   padding-left: 30%;
@@ -75,6 +76,7 @@ main p {
   height: auto;
   width: auto;
   background-image: url(../img/sombrilla.jpg);
+  object-fit: fill;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,6 +112,7 @@ main p {
   padding-top: 30px;
   padding-bottom: 50px;
   background-image: url(../img/pasillo.jpg);
+  object-fit: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,6 +154,7 @@ main p {
       background-color: rgba(240, 248, 255, 0.221);
       margin: 35px 50px 35px 50px; }
       .habitaciones .habitacion-comun .habitacion-comunes h3 {
+        text-align: center;
         margin: 25px;
         color: aliceblue;
         font-size: 30px;
@@ -184,6 +188,7 @@ main p {
       background-color: rgba(240, 248, 255, 0.221);
       margin: 35px 50px 35px 50px; }
       .habitaciones .habitacion-full .habitacion-fulles h3 {
+        text-align: center;
         margin: 25px;
         color: aliceblue;
         font-size: 30px;
@@ -341,7 +346,7 @@ main .habitaciones {
       background-color: rgba(240, 248, 255, 0.221);
       margin: 35px 50px 35px 50px; }
       main .habitaciones .habitacion-comun .habitacion-comunes h3 {
-        margin: 25px;
+        margin: auto;
         color: aliceblue;
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif; }
@@ -375,7 +380,7 @@ main .habitaciones {
       background-color: rgba(240, 248, 255, 0.221);
       margin: 35px 50px 35px 50px; }
       main .habitaciones .habitacion-full .habitacion-fulles h3 {
-        margin: 25px;
+        margin: auto;
         color: aliceblue;
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif; }
@@ -529,7 +534,11 @@ main .ubicacion {
         height: 220px; }
       main .habitaciones .habitacion-comun .habitaciones-comunes h3 {
         font-size: 10px;
-        margin: 0px; }
+        margin: 0px;
+        text-align: center; }
+      main .habitaciones .habitacion-comun .habitaciones-comunes p {
+        text-align: center;
+        padding: 0px; }
     main .habitaciones .habitacion-full {
       margin: 0px;
       display: flex;
@@ -540,7 +549,12 @@ main .ubicacion {
         width: 350px;
         height: 220px; }
       main .habitaciones .habitacion-full .habitaciones-fulles h3 {
-        font-size: 10px; }
+        font-size: 10px;
+        text-align: center;
+        padding: 0px; }
+      main .habitaciones .habitacion-full .habitaciones-fulles p {
+        text-align: center;
+        padding: 0px; }
     main .contactenos {
       height: 100vh; } }
 
@@ -554,11 +568,19 @@ main .ubicacion {
   .habitaciones .habitacion-comun img {
     width: 350px;
     height: 220px; }
+  .habitaciones .habitacion-comun .habitacion-comunes h3 {
+    text-align: center; }
+  .habitaciones .habitacion-comun .habitacion-comunes p {
+    text-align: center; }
   .habitaciones .habitacion-full img {
     width: 350px;
     height: 220px; }
   .contactenos h2 {
     font-size: 30px; }
+  main .registro-contacto h2 {
+    margin: 0px;
+    font-size: 30px;
+    text-align: center; }
   .ubicacion {
     justify-content: space-evenly;
     height: 100vh; }
