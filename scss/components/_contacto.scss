@@ -2,12 +2,11 @@
 main{
     .registro-contacto{
         width: 100%;
-        height: auto;
         padding-right: 35%;
         padding-left: 35%;
         padding-bottom: 10%;
         background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,0.9753035003063726) 0%, rgba(85,85,117,1) 33%, rgba(0,212,255,0.9220822117909664) 100%); 
+        background: linear-gradient(90deg, rgba(30, 27, 81, 0.975) 0%, rgba(85,85,117,1) 33%, rgba(76, 172, 191, 0.922) 100%); 
         h2{
             text-decoration:solid;
             font-size: 50px;
@@ -17,6 +16,7 @@ main{
         }
         .contacto{
             text-align: center;
+            margin-bottom: 50px;
             div{
                 display: flex;
                 flex-direction: column;
