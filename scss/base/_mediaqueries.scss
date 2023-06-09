@@ -1,5 +1,5 @@
 /*--- MEDIAQUERIES ---*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
     main {
         width: 100%;
         .servicio{
@@ -56,14 +56,16 @@
         }
 
         .ubicacion {
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-wrap: wrap;
-            box-sizing: border-box;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
+            // background-position: center;
+
+            width: 100%;
+            .contenidoUbicacion{
+                @include flex(flex,center,center);
+                flex-direction: column;
+                .mapa{
+                    margin:10px;
+                }
+            }
         }
     }
 }
@@ -215,7 +217,7 @@
 
     .ubicacion {
         justify-content: space-evenly;
-        height: 100vh;
+     //   height: 100vh;
         .mapa{
             iframe {
                 width: 100%;

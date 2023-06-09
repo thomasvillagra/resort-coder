@@ -2,11 +2,9 @@
 main {
     .ubicacion {
         width: auto;
-        height: 90vh;
-        /*display: flex;
-        justify-content: space-around;
-        align-items: cen ter;*/
+        height: 100%;
         background-color: rgba(250, 235, 215, 0.847);
+        background-position: center;
         box-sizing: border-box;
         flex-wrap: wrap;
 
@@ -24,7 +22,7 @@ main {
             margin: 5%;
             @include flex (flex, space-around, center) 
             }
-            .p {
+            p {
                 padding: 50px;
                 font-size: 20px;
                 color: aliceblue;

@@ -323,11 +323,9 @@ main .registro-contacto {
 /*---PAGINA DE UBICACION ---*/
 main .ubicacion {
   width: auto;
-  height: 90vh;
-  /*display: flex;
-        justify-content: space-around;
-        align-items: cen ter;*/
+  height: 100%;
   background-color: rgba(250, 235, 215, 0.847);
+  background-position: center;
   box-sizing: border-box;
   flex-wrap: wrap; }
   main .ubicacion h2 {
@@ -343,7 +341,7 @@ main .ubicacion {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-  main .ubicacion .p {
+  main .ubicacion p {
     padding: 50px;
     font-size: 20px;
     color: aliceblue;
@@ -354,7 +352,7 @@ main .ubicacion {
     margin: 50px; }
 
 /*--- MEDIAQUERIES ---*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
   main {
     width: 100%; }
     main .servicio .servicio-contenido .imagen-container {
@@ -393,14 +391,14 @@ main .ubicacion {
           margin: 0px;
           padding: 0px; }
     main .ubicacion {
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      flex-wrap: wrap;
-      box-sizing: border-box;
-      flex-direction: column;
-      justify-content: space-evenly;
-      text-align: center; } }
+      width: 100%; }
+      main .ubicacion .contenidoUbicacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        main .ubicacion .contenidoUbicacion .mapa {
+          margin: 10px; } }
 
 @media screen and (max-width: 750px) {
   main {
@@ -479,8 +477,7 @@ main .ubicacion {
     font-size: 30px;
     text-align: center; }
   .ubicacion {
-    justify-content: space-evenly;
-    height: 100vh; }
+    justify-content: space-evenly; }
     .ubicacion .mapa iframe {
       width: 100%;
       height: 300px; }
